@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Sidebar = () => {
   return (
-    <div className="w-[80px] h-[876px] flex flex-col justify-between border border-solid border-gray-700 items-center p-2">
+    <div className="w-[80px] h-[876px] flex flex-col justify-between border border-solid border-gray-400 items-center p-2">
       <div className="flex flex-col gap-6">
       <div className="cursor-pointer">
       <Image src={"/logo.svg"} alt="img" width={50} height={10} />
