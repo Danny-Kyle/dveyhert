@@ -1,0 +1,22 @@
+[
+    {
+        "Name": "Book Bazaar",
+        "Amount": 2500000,
+        "Addedpct": 15
+    },
+    {
+        "Name": "Artisan Article",
+        "Amount": 1800000,
+        "Addedpct": 10
+    },
+    {
+        "Name": "Toy Troop",
+        "Amount": 1200000,
+        "Addedpct": 8
+    },
+    {
+        "Name": "XStore",
+        "Amount": 1000000,
+        "Addedpct": 8
+    }
+]
