@@ -1,11 +1,12 @@
 import React from 'react'
+import Image from 'next/image'
 import orders from "./orders.json"
 
 const OrderHistory = () => {
   return (
     <section>
       <div className='bg-white rounded-2xl p-3 w-[806px] h-[422px]'>
-        <header className='flex flex-row justify-between'>
+        <header className='flex flex-row justify-between mb-4'>
         <h2 className='font-medium'>Last Orders</h2>
         <h2 className='font-semibold text-green-500'>See All</h2>
         </header>
@@ -22,7 +23,7 @@ const OrderHistory = () => {
           <p className='text-gray-400'>{order.Date}</p>
           <p className='text-gray-900'>{order.Amount}</p>
           <p className={`${order.Status === true ? "text-blue-500": "text-red-400"}`}>{order.Status === true ? "Paid" : "Refund"}</p>
-          <div className='cursor-pointer'>View</div>
+          <div className='cursor-pointer flex flex-row gap-2'><Image src="/viewinvoice.svg" alt="img" width={10} height={10}/>View</div>
         </div>
       ))}
       </div>
