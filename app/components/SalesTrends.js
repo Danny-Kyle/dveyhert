@@ -5,7 +5,7 @@ const SalesTrends = () => {
   return (
     <main>
       <section>
-        <div>
+        <div className='flex flex-row justify-between'> 
           <h2>Sales Trends</h2>
           <div>Sort by: 
             <div className='border border-solid rounded-full flex flex-row gap-2 w-[96px] h-[32px] items-center justify-center'>Weekly
