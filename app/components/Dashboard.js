@@ -6,15 +6,17 @@ import SalesTrends from "./SalesTrends";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className="">
       <Navbar />
+      <section className="p-3">
       <div>
         <SalesTrends />
       </div>
-      <div>
+      <div className="flex flex-row justify-between">
         <OrderHistory />
         <PlatformMetrics />
       </div>
+      </section>
     </div>
   );
 };
