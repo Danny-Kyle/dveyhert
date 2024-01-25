@@ -1,4 +1,5 @@
 import React from 'react'
+import orders from "./orders.json"
 
 const OrderHistory = () => {
   return (
@@ -15,6 +16,15 @@ const OrderHistory = () => {
         <p>Status</p>
         <p>Invoice</p>
       </nav>
+      {orders.map((order, index) => (
+        <div key={index} className='border-b-2 my-2 py-4 grid grid-cols-5 justify-evenly'>
+          <div>{order.Name}</div>
+          <p className='text-gray-400'>{order.Date}</p>
+          <p className='text-gray-900'>{order.Amount}</p>
+          <p className={`${order.Status === true ? "text-blue-500": "text-red-400"}`}>{order.Status === true ? "Paid" : "Refund"}</p>
+          <div className='cursor-pointer'>View</div>
+        </div>
+      ))}
       </div>
       
     </section>
