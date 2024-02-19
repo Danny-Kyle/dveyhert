@@ -18,5 +18,10 @@
         "Name": "XStore",
         "Amount": 1000000,
         "Addedpct": 8
+    },
+    {
+        "Name": "Tela Cyberrock",
+        "Amount": 19000000,
+        "Addedpct": 6
     }
 ]
