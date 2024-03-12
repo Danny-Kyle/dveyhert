@@ -5,10 +5,10 @@ import orders from "./orders.json"
 const OrderHistory = () => {
   return (
     <section>
-      <div className='bg-white rounded-2xl p-3 w-[806px] h-[422px]'>
+      <div className='bg-white rounded-2xl p-6 w-[806px] h-[422px] text-black'>
         <header className='flex flex-row justify-between mb-4'>
         <h2 className='font-medium'>Last Orders</h2>
-        <h2 className='font-semibold text-green-500'>See All</h2>
+        <h2 className='font-semibold text-green-500 cursor-pointer ' >See All</h2>
         </header>
         <nav className='grid grid-cols-5 justify-evenly border-b-2'>
         <p>Name</p>
@@ -23,7 +23,7 @@ const OrderHistory = () => {
           <p className='text-gray-400'>{order.Date}</p>
           <p className='text-gray-900'>{order.Amount}</p>
           <p className={`${order.Status === true ? "text-blue-500": "text-red-400"}`}>{order.Status === true ? "Paid" : "Refund"}</p>
-          <div className='cursor-pointer flex flex-row gap-2'><Image src="/viewinvoice.svg" alt="img" width={10} height={10}/>View</div>
+          <div className='cursor-pointer flex flex-row gap-2'><Image src="/viewinvoice.svg" alt="img" width={20} height={20}/>View</div>
         </div>
       ))}
       </div>
